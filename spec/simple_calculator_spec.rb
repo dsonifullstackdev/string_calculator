@@ -33,5 +33,11 @@ RSpec.describe SimpleCalculator, type: :service do
       end
     end
 
+    context "given '1\n2,3'" do
+      it "returns 6" do
+        expect(SimpleCalculator.add("1\n2,3")).to eql(6)
+      end
+    end
+
   end
 end
