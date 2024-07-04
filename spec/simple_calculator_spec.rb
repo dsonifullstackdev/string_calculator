@@ -39,5 +39,23 @@ RSpec.describe SimpleCalculator, type: :service do
       end
     end
 
+    context "given '//;\n1;2'" do
+      it "returns 3" do
+        expect(SimpleCalculator.add("//;\n1;2")).to eql(3)
+      end
+    end
+
+    context "given a negative number" do
+      it "raises an exception 'negative numbers not allowed'" do
+        expect { SimpleCalculator.add("1,-2,3") }.to raise_error("negative numbers not allowed: -2")
+      end
+    end
+
+    context "given multiple negative numbers" do
+      it "raises an exception with all negative numbers" do
+        expect { SimpleCalculator.add("1,-2,-3") }.to raise_error("negative numbers not allowed: -2,-3")
+      end
+    end
+
   end
 end
