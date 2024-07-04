@@ -1,29 +1,29 @@
 # README
 
-This is Simple String calculator application.
+**Simple String Calculator Application**
+  Overview
+  This is a simple String Calculator application implemented in Ruby on Rails following Test-Driven Development (TDD) practices. The application calculates the sum of numbers provided in a string format with various delimiters and handles special cases such as new lines and negative numbers.
 
-It requires:
-Ruby: 3.1
-Rails: 7.1.3.4
-
-Requirements to install:
-
+**Requirements**
 * Ruby version: 3.1
-
 * Rails version: 7.1.3.4
+* System dependencies: Tested on Ubuntu 20.04
 
-* System dependencies: tested with ubuntu 20.04
+**Installation**
+1. Clone the Repository:
+  git clone git@github.com:dsonifullstackdev/string_calculator.git
+  cd string_calculator
+  bundle install
 
-* Configuration: Not required
+**Running Tests**
+  bundle exec rspec
 
-* Database creation: Not required
+**File Structure**
+  * Main Logic: app/services/string_calculator.rb
+  * Test Cases: spec/string_calculator_spec.rb
 
+__Usage
+  The main logic for the string calculator can be found in app/services/string_calculator.rb. This class provides a method .add which takes a string of numbers and returns their sum.
 
-Process to run it
- 1) install the bundle with command: bundle install
- 2) run the test with command: bundle exec rspec
-
- Main Logic file: app/services/simple_calculator.rb
- Test cases file: spec/simple_calculator_spec
 
 
