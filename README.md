@@ -10,10 +10,10 @@
 * System dependencies: Tested on Ubuntu 20.04
 
 **Installation**
-1. Clone the Repository:
-  git clone git@github.com:dsonifullstackdev/string_calculator.git
-  cd string_calculator
-  bundle install
+ * Clone the Repository:
+ * git clone git@github.com:dsonifullstackdev/string_calculator.git
+ * cd string_calculator
+ * bundle install
 
 **Running Tests**
   bundle exec rspec
@@ -22,7 +22,7 @@
   * Main Logic: app/services/string_calculator.rb
   * Test Cases: spec/string_calculator_spec.rb
 
-__Usage
+**Usage**
   The main logic for the string calculator can be found in app/services/string_calculator.rb. This class provides a method .add which takes a string of numbers and returns their sum.
 
 
