@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Simple String calculator application.
 
-Things you may want to cover:
+It requires:
+Ruby: 3.1
+Rails: 7.1.3.4
 
-* Ruby version
+Requirements to install:
 
-* System dependencies
+* Ruby version: 3.1
 
-* Configuration
+* Rails version: 7.1.3.4
 
-* Database creation
+* System dependencies: tested with ubuntu 20.04
 
-* Database initialization
+* Configuration: Not required
 
-* How to run the test suite
+* Database creation: Not required
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Process to run it
+ 1) install the bundle with command: bundle install
+ 2) run the test with command: bundle exec rspec
 
-* ...
+ Main Logic file: app/services/simple_calculator.rb
+ Test cases file: spec/simple_calculator_spec
+
+
